@@ -1,6 +1,8 @@
 # Kafka
 
-Boas práticas na escrita de software que você pode aplicar para obter uma maior legibilidade e manutenabilidade do seu código.
+Considarado um message broker de alto desempenho, escalável e resiliente, que gerencia a transmissão de mensagens entre sistemas. 
+Ele permite a publicação e consumo de mensagens, com armazenamento durável e eficiente. É utilizado em sistemas que exigem processamento de eventos em tempo real, 
+integração entre microserviços e monitoramento de dados, sendo uma solução robusta para ambientes de alta demanda.
 
 ## 🛠️ Construído com 
 
