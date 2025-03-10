@@ -1,0 +1,9 @@
+{
+    "namespace" : "dev.by",
+    "type" : "record",
+    "name" : "Curso",
+    "fields" : [
+        {"name" : "id", "type" : "string"},
+        {"name" : "descricao", "type" : "string" }
+    ]
+}
