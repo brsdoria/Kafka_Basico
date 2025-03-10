@@ -6,7 +6,7 @@ integração entre microserviços e monitoramento de dados, sendo uma solução 
 
 ## 🛠️ Construído com 
 
-* [Visual Studio 2022](https://learn.microsoft.com/pt-br/visualstudio/windows/?view=vs-2022) - Ferramenta de desenvolvimento, que permite realizar todo o ciclo de desenvolvimento em um só lugar.
+* [Visual Studio Code](https://code.visualstudio.com/) - Editor de código-fonte leve e de código aberto da Microsoft, que oferece uma experiência de desenvolvimento poderosa e altamente personalizável, embora seja mais simples que o Visual Studio.
 
 ## 📚 Principais Bibliotecas, Frameworks e Comandos do NuGet Utilizados
 
