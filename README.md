@@ -1,4 +1,4 @@
-# Clean Code 
+# Kafka
 
 Boas práticas na escrita de software que você pode aplicar para obter uma maior legibilidade e manutenabilidade do seu código.
 
@@ -8,25 +8,17 @@ Boas práticas na escrita de software que você pode aplicar para obter uma maio
 
 ## 📚 Principais Bibliotecas, Frameworks e Comandos do NuGet Utilizados
 
-* [net8.0](https://learn.microsoft.com/pt-br/dotnet/core/whats-new/dotnet-8/overview) - Versão da plataforma de desenvolvimento .NET, que é de código aberto e multiplataforma, desenvolvida pela Microsoft.
+* [net9.0](https://learn.microsoft.com/pt-br/dotnet/core/whats-new/dotnet-9/overview) - Versão da plataforma de desenvolvimento .NET, que é de código aberto e multiplataforma, desenvolvida pela Microsoft.
 ```
 dotnet add package Microsoft.NET.Sdk.Web --version 8.0.0
 ```
-* [log4net]() - Solução robusta e flexível para registrar logs em aplicações .NET
+* [Confluent.Kafka]() -  Biblioteca cliente para a plataforma Apache Kafka para fornecer uma interface de alta performance e fácil de usar para interagir com o Kafka a partir de aplicações .NET (C#).
 ```
-NuGet\Install-Package log4net -Version 2.0.17
+dotnet add package Confluent.Kafka
 ```
-* [Microsoft.NET.Test.Sdk]() - Suporte necessário para executar testes automatizados em projetos .NET.
+* [Confluent.SchemaRegistry.Serdes.Avro]() - Biblioteca do Confluent, parte da plataforma Apache Kafka, que oferece suporte ao uso de schemas Avro (um formato de serialização de dados) para codificar e decodificar mensagens em um sistema Kafka.
 ```
-NuGet\Install-Package Microsoft.NET.Test.Sdk -Version 17.10.0
-```
-* [NetArchTest.Rules]() -  Conjunto de regras para facilitar a validação da arquitetura de software em projetos .NET
-```
-NuGet\Install-Package NetArchTest.Rules -Version 1.3.2 
-```
-* [Xunit]() - Framework de testes unitários para aplicações .NET
-```
-NuGet\Install-Package xunit -Version 2.9.0
+dotnet add package Confluent.SchemaRegistry.Serdes.Avro
 ```
 ## 🚧 Descrição da Estrutura do Projeto
 
