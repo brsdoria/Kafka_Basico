@@ -1,8 +1,8 @@
 # Kafka
 
-Considarado um message broker de alto desempenho, escalável e resiliente, que gerencia a transmissão de mensagens entre sistemas. 
-Ele permite a publicação e consumo de mensagens, com armazenamento durável e eficiente. É utilizado em sistemas que exigem processamento de eventos em tempo real, 
-integração entre microserviços e monitoramento de dados, sendo uma solução robusta para ambientes de alta demanda.
+<p align="justify"> 
+O projeto tem como objetivo ensinar a aplicação prática de padrões de modelagem de domínios ricos, com foco em DDD (Domain-Driven Design), CQRS e Event Sourcing. Além da teoria essencial, será utilizado .NET C# com orientação a objetos correta, incorporando os princípios do SOLID e Design Patterns. Envolve também o desenvolvimento de uma aplicação de e-commerce, abordando conceitos como carrinho de compras, clientes e pedidos. Aprenderemos a aplicar DDD e entender quando é adequado adotar ou simplificar certos padrões, reconhecendo a importância de escolher a complexidade correta para a solução.
+</p>
 
 ## 🛠️ Construído com 
 
