@@ -1,7 +1,7 @@
 # Kafka
 
 <p align="justify"> 
-O projeto tem como objetivo ensinar a aplicação prática de padrões de modelagem de domínios ricos, com foco em DDD (Domain-Driven Design), CQRS e Event Sourcing. Além da teoria essencial, será utilizado .NET C# com orientação a objetos correta, incorporando os princípios do SOLID e Design Patterns. Envolve também o desenvolvimento de uma aplicação de e-commerce, abordando conceitos como carrinho de compras, clientes e pedidos. Aprenderemos a aplicar DDD e entender quando é adequado adotar ou simplificar certos padrões, reconhecendo a importância de escolher a complexidade correta para a solução.
+Criação de uma solution com dois projetos com objetivo ensinar a aplicação prática de um produtor(responsável por produzir as mesagens para o Apache Kafka) e o consumidor(responsável por consumir as mensagens que chegam em um determinado tópico).
 </p>
 
 ## 🛠️ Construído com 
