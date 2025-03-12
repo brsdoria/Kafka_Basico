@@ -10,9 +10,9 @@ Criação de uma solution com dois projetos com objetivo ensinar a aplicação p
 
 ## 📚 Principais Bibliotecas, Frameworks e Comandos do NuGet Utilizados
 
-* [net9.0](https://learn.microsoft.com/pt-br/dotnet/core/whats-new/dotnet-9/overview) - Servidor do Docker
+* [net9.0](https://learn.microsoft.com/pt-br/dotnet/core/whats-new/dotnet-9/overview) - Versão da plataforma de desenvolvimento .NET, que é de código aberto e multiplataforma, desenvolvida pela Microsoft.
 ```
-docker-compose -f docker-compose-confluent.yml up -d
+dotnet add package Microsoft.NET.Sdk.WebAssembly.Pack --version 9.0.0
 ```
 * [Confluent.Kafka]() -  Biblioteca cliente para a plataforma Apache Kafka para fornecer uma interface de alta performance e fácil de usar para interagir com o Kafka a partir de aplicações .NET (C#).
 ```
@@ -25,17 +25,23 @@ dotnet add package Confluent.SchemaRegistry.Serdes.Avro
 
 ## 📚 Principais Comandos Utilizados Via CLI
 
-* [net9.0](https://learn.microsoft.com/pt-br/dotnet/core/whats-new/dotnet-9/overview) - Versão da plataforma de desenvolvimento .NET, que é de código aberto e multiplataforma, desenvolvida pela Microsoft.
+* Servidor do Docker
 ```
-dotnet add package Microsoft.NET.Sdk.WebAssembly.Pack --version 9.0.0
+docker-compose -f docker-compose-confluent.yml up -d
 ```
-* [Confluent.Kafka]() -  Biblioteca cliente para a plataforma Apache Kafka para fornecer uma interface de alta performance e fácil de usar para interagir com o Kafka a partir de aplicações .NET (C#).
+* Criando um tópico
 ```
-dotnet add package Confluent.Kafka
+E:\ClusterKafka\Kafka> .\bin\windows\kafka-topics.bat --create --topic cursos --bootstrap-server localhost:9094
 ```
-* [Confluent.SchemaRegistry.Serdes.Avro]() - Biblioteca do Confluent, parte da plataforma Apache Kafka, que oferece suporte ao uso de schemas Avro (um formato de serialização de dados) para codificar e decodificar mensagens em um sistema Kafka.
+* Listando tópicos
 ```
-dotnet add package Confluent.SchemaRegistry.Serdes.Avro
+E:\ClusterKafka\Kafka> .\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9094
+E:\ClusterKafka\Kafka> .\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9095
+E:\ClusterKafka\Kafka> .\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9094, localhost:9095
+```
+* Excluíndo um tópico
+```
+E:\ClusterKafka\Kafka> .\bin\windows\kafka-topics.bat --delete --topic cursos --bootstrap-server localhost:9094
 ```
 
 ## 🚧 Descrição da Estrutura do Projeto
