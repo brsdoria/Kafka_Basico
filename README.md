@@ -23,11 +23,11 @@ dotnet add package Confluent.Kafka
 dotnet add package Confluent.SchemaRegistry.Serdes.Avro
 ```
 
-## 📚 Principais Comandos Utilizados Via CLI
+## 📚 Principais Comandos Via CLI
 
 * Servidor do Docker
 ```
-docker-compose -f docker-compose-confluent.yml up -d
+PS C:\ClusterKafka> docker-compose -f docker-compose-confluent.yml up -d
 ```
 * Criando um tópico
 ```
@@ -42,6 +42,30 @@ E:\ClusterKafka\Kafka> .\bin\windows\kafka-topics.bat --list --bootstrap-server 
 * Excluíndo um tópico
 ```
 E:\ClusterKafka\Kafka> .\bin\windows\kafka-topics.bat --delete --topic cursos --bootstrap-server localhost:9094
+```
+* Criando um tópico com partição e fator de replicação
+```
+E:\ClusterKafka\Kafka> .\bin\windows\kafka-topics.bat --create --topic chat --bootstrap-server localhost:9094 --partitions 2 --replication-factor 2
+```
+* Alterando a quantidade de partições
+```
+E:\ClusterKafka\Kafka> .\bin\windows\kafka-topics.bat --alter --topic chat --bootstrap-server localhost:9094 --partitions 3
+```
+* Obter informações de um tópico
+```
+E:\ClusterKafka\Kafka> .\bin\windows\kafka-topics.bat --describe --topic chat --bootstrap-server localhost:9094
+```
+* Produzindo mensagens
+```
+E:\ClusterKafka\Kafka> .\bin\windows\kafka-console-producer.bat --topic chat --bootstrap-server localhost:9094
+```
+* Consumindo mensagens
+```
+E:\ClusterKafka\Kafka> .\bin\windows\kafka-console-consumer.bat --topic chat --bootstrap-server localhost:9094 
+```
+* Consumindo mensagens em um grupo de consumidores
+```
+E:\ClusterKafka\Kafka> .\bin\windows\kafka-console-consumer.bat --topic chat --bootstrap-server localhost:9094
 ```
 
 ## 🚧 Descrição da Estrutura do Projeto
