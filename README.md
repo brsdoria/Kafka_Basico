@@ -10,9 +10,9 @@ Criação de uma solution com dois projetos com objetivo ensinar a aplicação p
 
 ## 📚 Principais Bibliotecas, Frameworks e Comandos do NuGet Utilizados
 
-* [net9.0](https://learn.microsoft.com/pt-br/dotnet/core/whats-new/dotnet-9/overview) - Versão da plataforma de desenvolvimento .NET, que é de código aberto e multiplataforma, desenvolvida pela Microsoft.
+* [net9.0](https://learn.microsoft.com/pt-br/dotnet/core/whats-new/dotnet-9/overview) - Servidor do Docker
 ```
-dotnet add package Microsoft.NET.Sdk.WebAssembly.Pack --version 9.0.0
+docker-compose -f docker-compose-confluent.yml up -d
 ```
 * [Confluent.Kafka]() -  Biblioteca cliente para a plataforma Apache Kafka para fornecer uma interface de alta performance e fácil de usar para interagir com o Kafka a partir de aplicações .NET (C#).
 ```
