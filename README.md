@@ -25,7 +25,7 @@ dotnet add package Confluent.SchemaRegistry.Serdes.Avro
 
 ## 📚 Principais Comandos Via CLI
 
-* Iniciar e Executa containers Docker
+* Inicia e Executa containers Docker
 ```
 PS C:\ClusterKafka> docker-compose -f docker-compose-confluent.yml up -d
 ```
