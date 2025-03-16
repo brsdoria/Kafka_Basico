@@ -16,7 +16,7 @@ using var producer = new ProducerBuilder<string, dev.by.Curso>(config)
 .SetValueSerializer(new AvroSerializer<dev.by.Curso>(SchemaRegistry))
 .Build();
 
- GeradorDeCursos gerador = new GeradorDeCursos();
+ GeradorDeCursos gerador = new GeradorDeCursos(); 
  string NomeCursoAleatorio = gerador.GerarNomeCurso();
 
 var message = new Message<string, dev.by.Curso>
