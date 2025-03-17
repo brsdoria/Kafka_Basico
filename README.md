@@ -68,11 +68,17 @@ E:\ClusterKafka\Kafka> .\bin\windows\kafka-console-consumer.bat --topic cursos -
 E:\ClusterKafka\Kafka> .\bin\windows\kafka-console-consumer.bat --topic cursos --bootstrap-server localhost:9094
 ```
 
+## 🚧 Descrição da Estrutura do Cluster do Kafka
+
+A estrutura do cluster do kafka segundo a imagem abaixo é composta da seguinte forma:
+
+![EstruturaDoProjeto](screenshots/estruturaClusterKafka.png)
+
 ## 🚧 Descrição da Estrutura do Projeto
 
 A estrutura do projeto segundo a imagem abaixo é composta da seguinte forma:
 
-![EstruturaDoProjeto](screenshots/estrutura.png)
+![EstruturaDoProjeto](screenshots/estruturaProjeto.png)
 
 ## ⚠️ Atenção
 
